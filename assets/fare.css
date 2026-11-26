@@ -294,3 +294,11 @@ html[data-theme="light"] .footer h4{color:#222}
 html[data-theme="light"] .loader{background:#f1f1f2}
 html[data-theme="light"] .loader-word{color:#333}
 html[data-theme="light"] .float-help,html[data-theme="light"] .to-top{background:#fff;color:#222;border-color:#ccc}
+
+/* Refined full-width rounded Fare slab */
+.topbar{width:min(1240px,calc(100% - 44px));min-height:82px;margin:18px auto 0;padding:11px 16px 11px 19px;border-radius:30px;background:rgba(7,7,8,.96);border:1px solid #242428;box-shadow:0 18px 55px #0007;gap:22px}
+.brand-icon{width:48px;height:48px;border-radius:50%;flex:0 0 48px}.brand-word{font-size:21px;letter-spacing:.12em}
+.header-actions{gap:12px}.theme-toggle{width:48px;height:48px;min-width:48px;padding:0;border-radius:50%;background:#0c0c0e;border-color:#303035}.theme-glyph{display:grid;place-items:center;width:20px;height:20px;font-size:0}.theme-glyph svg{width:19px;height:19px;display:block;stroke:#e6e6e8;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.theme-menu{border-radius:15px;background:#0d0d0f;border-color:#2c2c31}.theme-menu button{padding:11px 12px}.theme-menu button span{display:grid;place-items:center;width:20px;height:20px;font-size:16px}
+.mobile-toggle{width:48px;height:48px;border-radius:50%;background:#0c0c0e;border-color:#303035}
+@media(max-width:760px){.topbar{width:calc(100% - 28px);min-height:76px;margin-top:12px;padding:10px 12px 10px 15px;border-radius:27px;gap:8px}.brand-icon{width:45px;height:45px;flex-basis:45px}.brand-word{font-size:20px}.theme-toggle,.mobile-toggle{width:45px;height:45px;min-width:45px}.header-actions{gap:8px}}
