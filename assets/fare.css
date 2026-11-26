@@ -413,3 +413,9 @@ html[data-theme="light"] .mobile-nav a{color:#3b3b42;border-color:#0000000d}
 .topbar.is-scrolled{background:rgba(9,9,10,.82)!important;border-color:#303035!important;box-shadow:0 12px 38px #0005!important;backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important}
 html[data-theme="light"] .topbar{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
 html[data-theme="light"] .topbar.is-scrolled{background:rgba(248,248,250,.86)!important;border-color:#d0d0d5!important;box-shadow:0 12px 38px #2020241c,inset 0 1px #fff!important;backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important}
+
+
+/* Keep the Fare navigation attached to the viewport on every scroll position */
+.topbar{position:fixed!important;top:12px!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;margin:0!important;width:min(1320px,calc(100% - 36px))!important;z-index:1200!important}
+body{padding-top:108px}
+@media(max-width:760px){.topbar{top:8px!important;width:calc(100% - 24px)!important}body{padding-top:94px}}
