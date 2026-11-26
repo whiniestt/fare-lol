@@ -356,3 +356,39 @@ html[data-theme="light"] .footer h4{color:#242428}
 html[data-theme="light"] .loader{background:#e9e9eb}
 html[data-theme="light"] .loader-word{color:#242428}
 html[data-theme="light"] .server-carousel-loading{color:#55555d}
+
+
+/* GLOBAL LIGHT THEME — shared by every Fare page */
+html[data-theme="light"]{--green:#55555d;--green2:#29292e;--accent:#55555d;--accent-soft:#77777f;--bg:#e9e9eb;--panel:#f5f5f6;--panel2:#dedee1;--line:#c9c9ce;--text:#202024;--muted:#65656d}
+html[data-theme="light"] main,html[data-theme="light"] .shell{color:#202024}
+html[data-theme="light"] .page-head h1,html[data-theme="light"] main h1{color:#242428}
+html[data-theme="light"] .page-head h1 span,html[data-theme="light"] main h1 span{color:#62626a!important;-webkit-text-fill-color:#62626a}
+html[data-theme="light"] .page-head p,html[data-theme="light"] .section-copy,html[data-theme="light"] main p{color:#62626a}
+html[data-theme="light"] .eyebrow{color:#77777f}
+html[data-theme="light"] .fare-light-banner{border:1px solid #d0d0d5;border-radius:18px;box-shadow:0 12px 32px #0000000b}
+html[data-theme="light"] .page-grid .feature-card,html[data-theme="light"] .feature-card{background:linear-gradient(145deg,#fbfbfc,#e8e8eb);border:1px solid #d0d0d5;color:#242428;box-shadow:0 12px 30px #0000000a,inset 0 1px #fff}
+html[data-theme="light"] .feature-card h3,html[data-theme="light"] .command-item,html[data-theme="light"] .faq summary{color:#242428}
+html[data-theme="light"] .feature-card p,html[data-theme="light"] .faq p{color:#62626a}
+html[data-theme="light"] .feature-icon{background:linear-gradient(145deg,#fff,#e2e2e6);border:1px solid #d0d0d5;color:#55555d}
+html[data-theme="light"] .wide-panel,html[data-theme="light"] .notice,html[data-theme="light"] .command-panel,html[data-theme="light"] .side-list,html[data-theme="light"] .mini-stat,html[data-theme="light"] .faq details{background:linear-gradient(145deg,#fafafc,#e8e8eb);border:1px solid #d0d0d5;color:#242428;box-shadow:0 12px 30px #00000009,inset 0 1px #fff}
+html[data-theme="light"] .wide-panel h2,html[data-theme="light"] .mini-stat b{color:#242428}
+html[data-theme="light"] .mini-stat span{color:#77777f}
+html[data-theme="light"] .side-list button{color:#65656d}
+html[data-theme="light"] .side-list button.active,html[data-theme="light"] .side-list button:hover{background:#dedee2;color:#222228}
+html[data-theme="light"] .search{background:#f8f8fa;border:1px solid #ceced3;color:#242428}
+html[data-theme="light"] .search::placeholder{color:#888890}
+html[data-theme="light"] .command-item{background:#f6f6f8;border:1px solid #d4d4d8;color:#242428}
+html[data-theme="light"] .command-item span{color:#55555d!important}
+html[data-theme="light"] .faq details{border-radius:14px;padding:17px 19px}
+html[data-theme="light"] .faq summary{color:#242428}
+html[data-theme="light"] .faq details[open] summary{color:#242428}
+html[data-theme="light"] .notice{color:#55555d}
+html[data-theme="light"] code{background:#dedee2;color:#303036;border:1px solid #d0d0d5;border-radius:5px;padding:2px 5px}
+html[data-theme="light"] .btn.secondary{background:linear-gradient(145deg,#fff,#e6e6e9);color:#242428;border-color:#c9c9ce}
+html[data-theme="light"] .footer{color:#55555d;border-color:#d0d0d5}
+html[data-theme="light"] .footer a:hover{color:#17171a}
+html[data-theme="light"] .mobile-nav{background:#f8f8fa;border-color:#d0d0d5}
+html[data-theme="light"] .mobile-nav a{color:#55555d}
+html[data-theme="light"] .mobile-nav a:hover{color:#17171a}
+html[data-theme="light"] .page-grid,html[data-theme="light"] .command-layout{color:#242428}
+html[data-theme="light"] input,html[data-theme="light"] select,html[data-theme="light"] textarea{color:#242428}
