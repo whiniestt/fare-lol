@@ -672,6 +672,6 @@ html[data-theme="light"] #server-results .network-server-meta>span:first-child{c
 
 /* Smooth, frame-synced touch trail */
 .fare-cursor-dot{will-change:transform;backface-visibility:hidden;}
-.fare-cursor-dot{width:9px!important;height:9px!important;}
-.fare-cursor-dot.is-pressed{width:7px!important;height:7px!important;}
+.fare-cursor-dot{width:22px!important;height:22px!important;}
+.fare-cursor-dot.is-pressed{width:18px!important;height:18px!important;}
 
