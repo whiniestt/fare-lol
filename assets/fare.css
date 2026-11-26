@@ -655,3 +655,17 @@ html[data-theme="light"] #server-results .network-server-meta>span:first-child{c
 #server-results.cards-paused .network-track{animation-play-state:paused!important}
 @keyframes fare-lane-forward{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}
 @keyframes fare-lane-reverse{0%{transform:translate3d(-50%,0,0)}100%{transform:translate3d(0,0,0)}}
+
+
+/* Fix: server lanes must keep autoplaying; touch remains free to scroll the page. */
+#server-results .network-marquee{overflow:hidden!important;overflow-x:hidden!important;overflow-y:hidden!important;touch-action:pan-y!important;scroll-snap-type:none!important;cursor:default!important}
+#server-results .network-track{animation-play-state:running!important;transform:translate3d(0,0,0);will-change:transform!important}
+#server-results .network-row-one .network-track{animation:fare-lane-forward 42s linear infinite!important}
+#server-results .network-row-two .network-track{animation:fare-lane-reverse 47s linear infinite!important}
+#server-results .network-marquee:hover .network-track,#server-results.cards-paused .network-track{animation-play-state:running!important}
+@keyframes fare-lane-forward{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}
+@keyframes fare-lane-reverse{0%{transform:translate3d(-50%,0,0)}100%{transform:translate3d(0,0,0)}}
+.fare-cursor-dot{opacity:0!important;display:block!important;pointer-events:none!important;transition:opacity .08s ease!important}
+.fare-cursor-dot.is-visible{opacity:1!important}
+.fare-cursor-dot.is-pressed{opacity:1!important}
+@media(prefers-reduced-motion:reduce){#server-results .network-track{animation-duration:42s!important;animation-iteration-count:infinite!important}.fare-cursor-dot{display:none!important}}
