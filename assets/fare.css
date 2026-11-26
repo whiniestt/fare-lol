@@ -201,3 +201,11 @@ a:hover,.nav a:hover{color:#fff}
 .network-marquee::after{right:0;background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.88) 22%,rgba(5,5,5,.38) 68%,transparent 100%)}
 .network-server-card{position:relative}
 @media(max-width:650px){.network-marquee::before,.network-marquee::after{width:42px}}
+
+
+/* ZEON-style black edge vignette for the moving server-card section */
+#server-results{position:relative;isolation:isolate}
+#server-results::before,#server-results::after{content:"";position:absolute;z-index:6;top:0;bottom:0;width:clamp(54px,10vw,150px);pointer-events:none}
+#server-results::before{left:0;background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.82) 24%,rgba(5,5,5,.34) 62%,transparent 100%)}
+#server-results::after{right:0;background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.82) 24%,rgba(5,5,5,.34) 62%,transparent 100%)}
+@media(max-width:650px){#server-results::before,#server-results::after{width:54px}}
