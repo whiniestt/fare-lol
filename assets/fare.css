@@ -585,3 +585,20 @@ html[data-theme="light"] .network-server-card{background:linear-gradient(145deg,
 #server-results .network-server-card{width:clamp(275px,34vw,360px)!important;min-height:148px!important;flex:0 0 auto!important;scroll-snap-align:start!important}
 #server-results .network-footnote{margin-top:4px!important}
 @media(max-width:650px){#server-results .network-marquee{padding:8px 0 16px!important}#server-results .network-track{gap:12px!important}#server-results .network-server-card{width:min(82vw,330px)!important;min-height:132px!important}}
+
+
+/* Minimal Fare page loader and subtle desktop cursor trail */
+.loader{background:#050505!important;z-index:10000!important;display:grid!important;place-items:center!important;opacity:1;visibility:visible;transition:opacity .42s ease,visibility .42s ease!important}
+.loader.hide{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.loader-inner{width:min(230px,70vw);text-align:center!important}
+.loader-mark{display:none!important}
+.loader-word{display:inline-block!important;margin:0 0 18px!important;font-family:'Syne','Space Grotesk',sans-serif!important;font-size:31px!important;font-weight:800!important;letter-spacing:-.075em!important;color:transparent!important;background:linear-gradient(100deg,#777 0%,#fff 28%,#aaa 48%,#fff 68%,#777 100%)!important;background-size:220% auto!important;background-clip:text!important;-webkit-background-clip:text!important;animation:fare-word-flow 2.1s linear infinite!important}
+.loader-line{height:2px!important;width:100%!important;background:rgba(255,255,255,.13)!important;overflow:hidden!important;border-radius:8px!important}
+.loader-line span{display:block!important;width:38%!important;height:100%!important;border-radius:8px!important;background:linear-gradient(90deg,transparent,#fff,transparent)!important;animation:fare-line-flow 1.25s ease-in-out infinite!important}
+@keyframes fare-word-flow{to{background-position:220% center}}
+@keyframes fare-line-flow{0%{transform:translateX(-110%)}100%{transform:translateX(280%)}}
+.fare-cursor-dot{position:fixed;left:0;top:0;width:13px;height:13px;border-radius:50%;background:rgba(255,255,255,.32);border:1px solid rgba(255,255,255,.42);box-shadow:0 0 12px rgba(255,255,255,.08);pointer-events:none;z-index:9998;opacity:0;transition:opacity .18s ease,width .15s ease,height .15s ease}
+body:has(.fare-cursor-dot) .fare-cursor-dot{opacity:1}
+.fare-cursor-dot.is-pressed{width:10px;height:10px;background:rgba(255,255,255,.55)}
+@media(hover:none),(pointer:coarse){.fare-cursor-dot{display:none!important}}
+@media(prefers-reduced-motion:reduce){.loader-word,.loader-line span{animation:none!important}.fare-cursor-dot{display:none!important}}
