@@ -191,3 +191,13 @@ a:hover,.nav a:hover{color:#fff}
 @keyframes fare-network-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:650px){#server-results{padding-top:12px}.network-marquee{margin-left:-22px;margin-right:-22px;width:calc(100% + 44px)}.network-server-card{width:310px;min-height:125px;padding:16px 18px;gap:14px}.network-server-avatar{width:66px;height:66px;flex-basis:66px}.network-server-meta{gap:8px;font-size:8px}.network-footnote{font-size:8px;line-height:1.7}.network-footnote span:last-child{text-align:right}}
 @media(prefers-reduced-motion:reduce){.network-track{animation:none!important}}
+
+
+/* ZEON-style black edge vignette around the moving server rows */
+#server-results{isolation:isolate}
+.network-marquee{position:relative;mask-image:none;-webkit-mask-image:none}
+.network-marquee::before,.network-marquee::after{content:"";position:absolute;z-index:3;top:0;bottom:0;width:clamp(42px,9vw,132px);pointer-events:none}
+.network-marquee::before{left:0;background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.88) 22%,rgba(5,5,5,.38) 68%,transparent 100%)}
+.network-marquee::after{right:0;background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.88) 22%,rgba(5,5,5,.38) 68%,transparent 100%)}
+.network-server-card{position:relative}
+@media(max-width:650px){.network-marquee::before,.network-marquee::after{width:42px}}
