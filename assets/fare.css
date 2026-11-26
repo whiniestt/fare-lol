@@ -209,3 +209,10 @@ a:hover,.nav a:hover{color:#fff}
 #server-results::before{left:0;background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.82) 24%,rgba(5,5,5,.34) 62%,transparent 100%)}
 #server-results::after{right:0;background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.82) 24%,rgba(5,5,5,.34) 62%,transparent 100%)}
 @media(max-width:650px){#server-results::before,#server-results::after{width:54px}}
+
+
+/* Softer, longer ZEON-style edge fade */
+#server-results::before,#server-results::after{width:clamp(86px,14vw,190px)}
+#server-results::before{background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.62) 22%,rgba(5,5,5,.24) 58%,rgba(5,5,5,.08) 78%,transparent 100%)}
+#server-results::after{background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.62) 22%,rgba(5,5,5,.24) 58%,rgba(5,5,5,.08) 78%,transparent 100%)}
+@media(max-width:650px){#server-results::before,#server-results::after{width:76px}}
