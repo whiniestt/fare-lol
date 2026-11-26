@@ -625,7 +625,6 @@ body:has(.fare-cursor-dot) .fare-cursor-dot{opacity:1}
 html[data-theme="light"] #server-results .network-server-card{background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(235,234,231,.78))!important;border-color:rgba(30,30,30,.12)!important;box-shadow:0 14px 34px rgba(30,27,22,.09),inset 0 1px #fff!important}
 html[data-theme="light"] #server-results .network-server-meta>span:first-child{color:rgba(20,20,20,.48)!important}
 @media(max-width:650px){#server-results{gap:3px!important}#server-results .network-track{gap:12px!important;animation-duration:46s!important}#server-results .network-row-two .network-track{animation-duration:51s!important}#server-results .network-server-card{width: min(78vw,310px)!important;flex-basis:min(78vw,310px)!important;min-height:104px!important;padding:14px!important}#server-results .network-server-avatar{width:46px!important;height:46px!important;flex-basis:46px!important}#server-results .network-footnote{font-size:8px!important}}
-@media(prefers-reduced-motion:reduce){#server-results .network-track{animation:none!important}}
 /* One identical 1.5-second Fare loader on every page. */
 .loader-inner{width:230px!important;max-width:70vw!important}
 .loader-line{width:100%!important;height:2px!important}
@@ -642,3 +641,8 @@ html[data-theme="light"] #server-results .network-server-meta>span:first-child{c
  #server-results .network-row-one .network-track{animation:fare-lane-forward 52s linear infinite!important}
  #server-results .network-row-two .network-track{animation:fare-lane-reverse 58s linear infinite!important}
 }
+
+/* Keep the requested server motion active on mobile and reduced-motion devices. */
+#server-results .network-row-one .network-track{animation:fare-lane-forward 52s linear infinite!important}
+#server-results .network-row-two .network-track{animation:fare-lane-reverse 58s linear infinite!important}
+#server-results.cards-paused .network-track{animation-play-state:paused!important}
