@@ -710,3 +710,9 @@ html[data-theme="light"] .topbar.is-scrolled{
 .theme-glyph svg,.theme-menu button span svg{display:block;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .theme-menu button span{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;flex:0 0 20px}
 .theme-toggle{gap:9px}
+
+
+/* Match the loader progress bar exactly to the Fare word width. */
+.loader-inner{width:max-content!important;max-width:70vw!important}
+.loader-word{width:max-content!important;margin-left:auto!important;margin-right:auto!important}
+.loader-line{width:100%!important}
