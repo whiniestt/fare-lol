@@ -482,3 +482,26 @@ html[data-theme="light"] .pill-dot{background:#444!important;box-shadow:0 0 0 4p
 html[data-theme="light"] .hero-pill{background:#ffffffb8;border-color:#deddd9;color:#555!important}
 html[data-theme="light"] .section,html[data-theme="light"] .stats-showcase{border-color:#deddd9}
 html[data-theme="light"] a{transition:color .2s ease,background .2s ease,border-color .2s ease}
+
+
+/* Keep the fixed navigation visually separate from page content while scrolling. */
+.topbar,
+.topbar.is-scrolled{
+  background:#080809!important;
+  background-color:#080809!important;
+  border:1px solid #303035!important;
+  box-shadow:0 14px 42px rgba(0,0,0,.72)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  isolation:isolate;
+  opacity:1!important;
+}
+html[data-theme="light"] .topbar,
+html[data-theme="light"] .topbar.is-scrolled{
+  background:#fff!important;
+  background-color:#fff!important;
+  border:1px solid #d8d8dc!important;
+  box-shadow:0 14px 42px rgba(25,25,30,.16)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
