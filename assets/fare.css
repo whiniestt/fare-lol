@@ -56,3 +56,50 @@ body:before{opacity:.10;background-image:linear-gradient(rgba(255,255,255,.035) 
   text-shadow:none;
 }
 a:hover,.nav a:hover{color:#fff}
+
+/* Homepage reconstruction from the supplied ZEON mobile reference */
+.topbar{height:94px;border:0;max-width:100%;padding:0 0}
+.brand{font-size:18px;letter-spacing:.02em;gap:15px}
+.brand-icon{width:58px;height:58px;border-radius:50%;border:0}
+.brand-icon img{border-radius:50%}
+.nav{display:none}
+.header-actions{display:flex;align-items:center;gap:18px}
+.desktop-link{width:52px;height:52px;border:1px solid #242426;border-radius:50%;display:grid;place-items:center;color:#aaa;font-size:20px}
+.mobile-toggle{display:block;width:48px;height:48px;border:0;background:transparent;font-size:25px;color:#aaa}
+.mobile-nav{position:absolute;right:0;top:84px;width:min(280px,90vw);padding:12px 18px;background:#0b0b0c;border:1px solid #242426;border-radius:14px;z-index:40}
+.zeon-hero{min-height:calc(100svh - 94px);background:#050505;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 120px}
+.hero-pill{display:inline-flex;align-items:center;gap:14px;border:1px solid #29292b;background:#09090a;border-radius:999px;padding:13px 23px;color:#d1d1d3;font-size:14px;letter-spacing:.01em;z-index:2}
+.pill-dot{width:10px;height:10px;border-radius:50%;background:#777;box-shadow:0 0 0 7px #202022}
+.pill-arrow{font-size:20px;color:#aaa;margin-left:4px}
+.zeon-hero h1{font-family:'Manrope',Arial,sans-serif;font-weight:400;letter-spacing:-.085em;line-height:.94;font-size:clamp(76px,13vw,150px);margin:70px 0 44px;display:flex;flex-direction:column;align-items:center;z-index:2}
+.zeon-hero h1 span:first-child{color:#f5f5f5;-webkit-text-fill-color:#f5f5f5;background:none}
+.zeon-hero h1 .hero-muted{color:#55565a;-webkit-text-fill-color:#55565a;background:none}
+.zeon-hero>p{max-width:700px;color:#77787c;font-size:clamp(17px,2.2vw,25px);line-height:1.8;margin:0 auto;z-index:2}
+.hero-actions{display:flex;gap:18px;margin-top:70px;z-index:2;width:min(750px,100%)}
+.hero-button{min-height:78px;flex:1;display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:18px 26px;border-radius:999px;font-size:18px;font-weight:600;border:1px solid #29292c;transition:transform .25s,background .25s}
+.hero-button:hover{transform:translateY(-3px)}
+.hero-button-dark{background:#101011;color:#eee}
+.hero-button-light{background:#f3f3f4;color:#090909;border-color:#f3f3f4}
+.hero-button-dark span{font-size:22px}
+.hero-bottom{position:absolute;bottom:35px;left:4.2%;right:4.2%;display:flex;align-items:center;gap:24px;z-index:3;text-align:left}
+.support-float{width:84px;height:84px;border:1px solid #28282a;border-radius:22px;background:linear-gradient(145deg,#141416,#080809);display:grid;place-items:center;color:#bdbdc0;font-size:28px;position:relative}
+.support-float i{position:absolute;width:17px;height:17px;border-radius:50%;background:#888;border:3px solid #080809;right:10px;top:10px}
+.slide-count{font-size:15px;color:#68696d;letter-spacing:.03em}.slide-count b{color:#aaa;margin:0 4px}
+.hero-scroll{margin-left:auto;color:#55565a;font:10px var(--mono);letter-spacing:.16em}
+.hero-orbit{position:absolute;z-index:1;width:150vw;height:65vw;border:1px solid #343438;border-radius:50%;pointer-events:none;transform:rotate(-20deg);opacity:.65}
+.orbit-one{top:34%;left:18%}.orbit-two{top:78%;left:-60%;transform:rotate(26deg)}
+.hero-logo-watermark{display:none}
+.zeon-intro{padding:145px 0 105px;text-align:center;border-top:1px solid #171719}
+.zeon-intro h2,.zeon-statement h2,.community-panel h2{font-size:clamp(48px,8vw,88px);font-weight:400;letter-spacing:-.075em;line-height:.98;margin:25px 0}
+.zeon-intro h2 span,.zeon-statement h2 span{color:#55565a}
+.zeon-intro p,.zeon-statement p,.community-panel p{max-width:580px;margin:0 auto;color:#858589;font-size:17px;line-height:1.8}
+.center-link{display:flex;justify-content:center;margin-top:42px}
+.zeon-statement{position:relative;overflow:hidden;min-height:390px;padding:65px;border:1px solid #252528;border-radius:22px;background:#09090a}
+.zeon-statement h2{margin:24px 0}.zeon-statement p{margin:0 0 32px}
+.statement-mark{position:absolute;right:5%;bottom:-125px;font-size:440px;line-height:1;font-weight:800;color:#fff;opacity:.025;pointer-events:none}
+.community-panel{display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px solid #252528;border-radius:22px;padding:45px;background:#09090a}
+.community-panel h2{font-size:clamp(42px,6vw,65px)}.community-panel p{margin:0}
+.footer{margin-top:30px}
+@media(min-width:900px){.nav{display:flex;gap:28px}.header-actions .mobile-toggle{display:none}.topbar{height:100px}.zeon-hero{min-height:calc(100vh - 100px)}}
+@media(max-width:650px){.shell{width:calc(100% - 42px)}.topbar{height:82px}.brand{font-size:17px}.brand-icon{width:50px;height:50px}.desktop-link{width:46px;height:46px}.zeon-hero{min-height:calc(100svh - 82px);padding:75px 22px 150px}.hero-pill{font-size:13px;padding:12px 18px}.zeon-hero h1{font-size:clamp(64px,16vw,94px);margin:68px 0 42px}.zeon-hero>p{font-size:18px;line-height:1.8}.hero-actions{margin-top:65px;gap:12px}.hero-button{min-height:68px;font-size:15px;padding:14px 13px}.hero-bottom{bottom:30px;left:20px;right:20px;gap:17px}.support-float{width:76px;height:76px;border-radius:20px}.hero-scroll{display:none}.slide-count{font-size:14px}.zeon-intro{padding:105px 0 75px}.zeon-intro p,.zeon-statement p,.community-panel p{font-size:15px}.zeon-statement{padding:30px 24px;min-height:360px}.community-panel{padding:30px 24px;display:block}.community-panel .hero-button{margin-top:25px;width:100%}.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:390px){.hero-actions{flex-direction:column}.hero-button{width:100%}.zeon-hero h1{font-size:64px}.feature-grid{grid-template-columns:1fr}}
