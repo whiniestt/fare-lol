@@ -739,3 +739,20 @@ html[data-theme="light"] .topbar.is-scrolled{
   from{transform:translate3d(0,0,0)}
   to{transform:translate3d(-50%,0,0)}
 }
+
+
+/* Single-row marquee: force the animation shorthand so older row rules cannot override it. */
+#server-results .network-row-one .network-track{
+  animation:fare-network-loop 34s linear infinite!important;
+  animation-play-state:running!important;
+}
+#server-results .network-row-one:hover .network-track{animation-play-state:running!important}
+@keyframes fare-network-loop{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+@media(prefers-reduced-motion:reduce){
+  #server-results .network-row-one .network-track{
+    animation:fare-network-loop 34s linear infinite!important;
+  }
+}
