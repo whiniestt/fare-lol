@@ -635,3 +635,10 @@ html[data-theme="light"] #server-results .network-server-meta>span:first-child{c
 .fare-cursor-dot.is-visible{opacity:1!important}
 .fare-cursor-dot.is-pressed{width:10px;height:10px;background:rgba(255,255,255,.58)}
 @media(prefers-reduced-motion:reduce){.fare-cursor-dot{display:none!important}}
+
+
+/* The Fare server lanes must keep moving even when the device requests reduced motion. */
+@media(prefers-reduced-motion:reduce){
+ #server-results .network-row-one .network-track{animation:fare-lane-forward 52s linear infinite!important}
+ #server-results .network-row-two .network-track{animation:fare-lane-reverse 58s linear infinite!important}
+}
