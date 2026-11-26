@@ -419,3 +419,10 @@ html[data-theme="light"] .topbar.is-scrolled{background:rgba(248,248,250,.86)!im
 .topbar{position:fixed!important;top:12px!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;margin:0!important;width:min(1320px,calc(100% - 36px))!important;z-index:1200!important}
 body{padding-top:108px}
 @media(max-width:760px){.topbar{top:8px!important;width:calc(100% - 24px)!important}body{padding-top:94px}}
+
+
+/* Keep the Fare navigation attached to the viewport while the page scrolls */
+.shell{padding-top:112px}
+.topbar{position:fixed!important;top:12px!important;left:50%!important;z-index:1200!important;margin:0!important;transform:translateX(-50%);will-change:transform,background,border-color}
+.topbar.is-scrolled{transform:translateX(-50%)}
+@media(max-width:760px){.shell{padding-top:94px}.topbar{top:8px!important;width:calc(100% - 24px)!important}.mobile-nav.open{position:fixed!important;top:88px!important;left:50%!important;transform:translateX(-50%);width:calc(100% - 24px)!important;max-width:520px;z-index:1199!important;max-height:calc(100dvh - 110px)!important}}
