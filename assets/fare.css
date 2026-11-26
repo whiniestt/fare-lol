@@ -716,3 +716,26 @@ html[data-theme="light"] .topbar.is-scrolled{
 .loader-inner{width:max-content!important;max-width:70vw!important}
 .loader-word{width:max-content!important;margin-left:auto!important;margin-right:auto!important}
 .loader-line{width:100%!important}
+
+
+/* Hard-set the live Fare network marquee: duplicated track loops continuously. */
+#server-results .network-marquee{display:block!important;overflow:hidden!important;white-space:normal!important}
+#server-results .network-track{
+  display:flex!important;
+  flex-wrap:nowrap!important;
+  width:max-content!important;
+  max-width:none!important;
+  gap:14px!important;
+  will-change:transform!important;
+  animation-name:fare-network-loop!important;
+  animation-timing-function:linear!important;
+  animation-iteration-count:infinite!important;
+  animation-play-state:running!important;
+}
+#server-results .network-row-one .network-track{animation-duration:34s!important}
+#server-results .network-row-two .network-track{animation-duration:41s!important}
+#server-results .network-server-card{flex:0 0 clamp(300px,48vw,520px)!important}
+@keyframes fare-network-loop{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
