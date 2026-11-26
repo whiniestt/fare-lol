@@ -34,3 +34,25 @@ body:before{opacity:.10;background-image:linear-gradient(rgba(255,255,255,.035) 
 .command-item{background:#101112;border-color:#252629;color:#e4e4e4}
 .loader{background:#050505}
 .float-help,.to-top{background:#111214;border-color:#34363a;color:#d6d6d6}
+
+/* ZEON-style restrained monochrome gradient typography */
+.gradient-text,
+.hero h1,
+.page-head h1,
+.section-head h2,
+.cta-panel h2{
+  background:linear-gradient(110deg,#ffffff 0%,#dedee0 38%,#9b9b9f 72%,#f5f5f5 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+}
+.hero h1 span{
+  background:linear-gradient(110deg,#fff 0%,#c9c9cc 48%,#85858a 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  text-shadow:none;
+}
+a:hover,.nav a:hover{color:#fff}
