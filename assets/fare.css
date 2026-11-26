@@ -547,3 +547,18 @@ html[data-theme="light"] .network-server-avatar{background:#e9e8e5!important;bor
 html[data-theme="light"] .network-card-link{background:rgba(20,20,20,.055)!important;color:#252525!important;border-color:#d8d6d1!important}
 html[data-theme="light"] .network-footnote{color:#77736d!important}
 @media(max-width:650px){.network-server-card{width:min(82vw,330px)!important;min-height:132px!important;padding:17px!important}.network-server-avatar{width:58px!important;height:58px!important;flex-basis:58px!important}.network-track{gap:12px!important}}
+
+/* Final server-card carousel: distinct glass tiles, moving one after another */
+.network-marquee{overflow:hidden!important;scroll-snap-type:none!important;padding:12px 0 24px!important}
+.network-track{display:flex!important;gap:18px!important;width:max-content!important;animation:fare-individual-cards 42s linear infinite!important;transform:translateZ(0)}
+.network-marquee:hover .network-track{animation-play-state:paused!important}
+.network-server-card{flex:0 0 clamp(275px,34vw,350px)!important;width:clamp(275px,34vw,350px)!important;margin:0!important;border-radius:22px!important;border:1px solid rgba(255,255,255,.14)!important;background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.025))!important;box-shadow:0 16px 38px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.1)!important}
+@keyframes fare-individual-cards{from{transform:translateX(0)}to{transform:translateX(var(--fare-loop-distance,-50%))}}
+html[data-theme="light"] .network-server-card{background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(232,231,228,.88))!important;border-color:rgba(30,30,30,.13)!important;box-shadow:0 14px 34px rgba(30,27,22,.10),inset 0 1px #fff!important}
+@media(max-width:650px){.network-track{gap:13px!important;animation-duration:48s!important}.network-server-card{flex-basis:min(82vw,320px)!important;width:min(82vw,320px)!important}}
+@media(prefers-reduced-motion:reduce){.network-track{animation:none!important}}
+/* Fare symbol is a clean circular mark — no square tile or outline */
+.brand-icon{width:34px!important;height:34px!important;flex:0 0 34px!important;padding:0!important;border:0!important;border-radius:50%!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+.brand-icon img{display:block;width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:50%!important;background:transparent!important}
+.loader-mark{width:44px!important;height:44px!important;border:0!important;border-radius:50%!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+.loader-mark img{width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:50%!important}
