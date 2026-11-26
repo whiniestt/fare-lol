@@ -562,3 +562,16 @@ html[data-theme="light"] .network-server-card{background:linear-gradient(145deg,
 .brand-icon img{display:block;width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:50%!important;background:transparent!important}
 .loader-mark{width:44px!important;height:44px!important;border:0!important;border-radius:50%!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
 .loader-mark img{width:100%!important;height:100%!important;object-fit:contain!important;border:0!important;border-radius:50%!important}
+
+
+/* Two independently moving server rows; the lower row travels in reverse. */
+#server-results{display:flex;flex-direction:column;gap:8px}
+#server-results .network-marquee{width:100%;cursor:grab;touch-action:pan-y}
+#server-results .network-row-two .network-track{animation-direction:reverse!important}
+#server-results.cards-paused .network-track,
+#server-results .network-marquee:hover .network-track{animation-play-state:paused!important}
+#server-results .network-marquee:active{cursor:grabbing}
+@media(max-width:650px){
+ #server-results{gap:4px}
+ #server-results .network-marquee{padding:8px 0 14px!important}
+}
