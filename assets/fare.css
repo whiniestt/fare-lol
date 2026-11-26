@@ -10,3 +10,27 @@
 .hero-art:after{content:'FARE / YOUR SERVER. YOUR CONTROL.';background:rgba(0,0,0,.46);padding:9px 12px;border-radius:5px;left:18px;bottom:16px;color:#fff}
 .fare-light-banner{display:block;width:100%;height:auto;max-height:245px;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:14px;margin:0 0 42px}
 @media(max-width:700px){.hero-art{height:170px}.fare-light-banner{max-height:150px}}
+
+/* ZEON reference palette: near-black surfaces, cool greys, restrained green */
+:root{--bg:#050505;--panel:#0a0a0b;--panel2:#111213;--line:#202124;--text:#f4f4f4;--muted:#929397;--green:#a8c58a;--green2:#d2e4bd;--red:#e46d6d}
+body{background:#050505;color:#f4f4f4}
+body:before{opacity:.10;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px)}
+.brand-icon{border-color:#303135;background:#101113}
+.nav-cta,.btn{background:#d7d7d7;color:#080808;border-color:#d7d7d7}
+.nav-cta:hover,.btn:hover{box-shadow:0 8px 30px #ffffff18}
+.btn.secondary{background:#111214;color:#ededed;border-color:#303135}
+.hero:before{background:radial-gradient(ellipse,#ffffff0c,transparent 68%)}
+.hero h1 span{color:var(--green);text-shadow:0 0 45px #a8c58a14}
+.hero-meta span:before{color:var(--green)}
+.trusted-row{color:#b7b7b9}
+.feature-card,.wide-panel,.mini-stat,.server-row,.side-list,.command-panel{background:linear-gradient(145deg,#101112,#090909);border-color:#242528}
+.feature-card:hover{border-color:#55575b}
+.feature-icon{border-color:#34363a;color:var(--green)}
+.mini-stat b,.server-avatar{color:var(--green)}
+.server-avatar{background:#151617;border-color:#37393c}
+.cta-panel{border-color:#303135;background:radial-gradient(ellipse at 50% 120%,#a8c58a12 0,transparent 65%),#090909}
+.side-list button.active,.side-list button:hover{background:#1a1b1d;color:#d9e6ca}
+.search{background:#080809;border-color:#303135}
+.command-item{background:#101112;border-color:#252629;color:#e4e4e4}
+.loader{background:#050505}
+.float-help,.to-top{background:#111214;border-color:#34363a;color:#d6d6d6}
