@@ -505,3 +505,18 @@ html[data-theme="light"] .topbar.is-scrolled{
   backdrop-filter:none!important;
   -webkit-backdrop-filter:none!important;
 }
+
+
+/* The header lives inside a .shell stacking context. Raise that parent above
+   every page section so the fixed bar cannot be painted underneath statistics,
+   cards, or other content while scrolling. */
+body > .shell:has(> .topbar){
+  position:relative;
+  z-index:5000!important;
+}
+body > .shell:has(> .topbar) > .topbar{
+  z-index:5001!important;
+}
+body > .shell:has(> .topbar) > .mobile-nav{
+  z-index:5001!important;
+}
