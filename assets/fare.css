@@ -520,3 +520,30 @@ body > .shell:has(> .topbar) > .topbar{
 body > .shell:has(> .topbar) > .mobile-nav{
   z-index:5001!important;
 }
+
+/* Fare wordmark and individual glass server cards */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap');
+.brand-word,.brand>span:last-child{font-family:'Syne','Space Grotesk',sans-serif!important;font-size:21px!important;font-weight:800!important;letter-spacing:-.065em!important;text-transform:none!important;color:#f4f4f5!important;line-height:1!important}
+.brand-icon{border-radius:11px!important;overflow:hidden}
+.brand-icon img{width:100%;height:100%;object-fit:contain}
+#server-results{padding-top:12px;overflow:hidden}
+#server-results:before,#server-results:after,.network-marquee:before,.network-marquee:after{display:none!important;content:none!important}
+.network-marquee{width:100%!important;margin:0!important;padding:8px 3px 20px!important;overflow-x:auto!important;overflow-y:hidden!important;mask-image:none!important;-webkit-mask-image:none!important;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;scrollbar-width:none}
+.network-marquee::-webkit-scrollbar{display:none}
+.network-track{display:flex!important;align-items:stretch!important;gap:16px!important;width:max-content!important;animation:none!important;transform:none!important}
+.network-server-card{width:clamp(275px,34vw,360px)!important;min-height:148px!important;flex:0 0 auto!important;gap:15px!important;padding:20px!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:22px!important;background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.025))!important;box-shadow:0 14px 36px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.09)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);position:relative!important;scroll-snap-align:start;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.network-server-card:hover{transform:translateY(-4px)!important;border-color:rgba(255,255,255,.28)!important;box-shadow:0 20px 44px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.12)!important}
+.network-card-index{position:absolute;right:17px;top:13px;color:#777;font:9px var(--mono);letter-spacing:.12em}
+.network-server-avatar{width:66px!important;height:66px!important;flex:0 0 66px!important;border-radius:19px!important;background:#171719!important;border:1px solid #ffffff20!important}
+.network-server-copy h3{font-size:16px!important;font-weight:700!important;margin:0 0 10px!important;max-width:100%;padding-right:8px}
+.network-server-meta{gap:7px!important;font-size:8px!important;letter-spacing:.08em!important}
+.network-card-link{margin-left:auto;background:rgba(255,255,255,.06)!important;border-radius:12px!important;flex:0 0 34px!important;width:34px!important;height:34px!important}
+.network-footnote{padding:0 4px!important;margin-top:5px!important}
+html[data-theme="light"] .brand-word,html[data-theme="light"] .brand>span:last-child{color:#171717!important}
+html[data-theme="light"] .network-server-card{background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(235,234,231,.82))!important;border-color:rgba(30,30,30,.12)!important;box-shadow:0 14px 34px rgba(30,27,22,.09),inset 0 1px #fff!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+html[data-theme="light"] .network-server-card:hover{border-color:rgba(25,25,25,.25)!important;box-shadow:0 20px 42px rgba(30,27,22,.14),inset 0 1px #fff!important}
+html[data-theme="light"] .network-card-index{color:#8a8882}
+html[data-theme="light"] .network-server-avatar{background:#e9e8e5!important;border-color:#d8d6d1!important}
+html[data-theme="light"] .network-card-link{background:rgba(20,20,20,.055)!important;color:#252525!important;border-color:#d8d6d1!important}
+html[data-theme="light"] .network-footnote{color:#77736d!important}
+@media(max-width:650px){.network-server-card{width:min(82vw,330px)!important;min-height:132px!important;padding:17px!important}.network-server-avatar{width:58px!important;height:58px!important;flex-basis:58px!important}.network-track{gap:12px!important}}
