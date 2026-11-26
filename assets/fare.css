@@ -530,7 +530,7 @@ body > .shell:has(> .topbar) > .mobile-nav{
 #server-results:before,#server-results:after,.network-marquee:before,.network-marquee:after{display:none!important;content:none!important}
 .network-marquee{width:100%!important;margin:0!important;padding:8px 3px 20px!important;overflow-x:auto!important;overflow-y:hidden!important;mask-image:none!important;-webkit-mask-image:none!important;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;scrollbar-width:none}
 .network-marquee::-webkit-scrollbar{display:none}
-.network-track{display:flex!important;align-items:stretch!important;gap:16px!important;width:max-content!important;animation:none!important;transform:none!important}
+.network-track{display:flex!important;align-items:stretch!important;gap:16px!important;width:max-content!important;animation:none!important}
 .network-server-card{width:clamp(275px,34vw,360px)!important;min-height:148px!important;flex:0 0 auto!important;gap:15px!important;padding:20px!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:22px!important;background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.025))!important;box-shadow:0 14px 36px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.09)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);position:relative!important;scroll-snap-align:start;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
 .network-server-card:hover{transform:translateY(-4px)!important;border-color:rgba(255,255,255,.28)!important;box-shadow:0 20px 44px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.12)!important}
 .network-card-index{position:absolute;right:17px;top:13px;color:#777;font:9px var(--mono);letter-spacing:.12em}
