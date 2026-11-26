@@ -756,3 +756,7 @@ html[data-theme="light"] .topbar.is-scrolled{
     animation:fare-network-loop 34s linear infinite!important;
   }
 }
+
+
+/* The fixed navigation already floats over the page; don't push the whole layout down. */
+body{padding-top:0!important}
