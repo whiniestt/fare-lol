@@ -646,3 +646,12 @@ html[data-theme="light"] #server-results .network-server-meta>span:first-child{c
 #server-results .network-row-one .network-track{animation:fare-lane-forward 52s linear infinite!important}
 #server-results .network-row-two .network-track{animation:fare-lane-reverse 58s linear infinite!important}
 #server-results.cards-paused .network-track{animation-play-state:paused!important}
+
+
+/* Fix: keep both server lanes continuously animated; hover must not freeze them. */
+#server-results .network-marquee:hover .network-track{animation-play-state:running!important}
+#server-results .network-row-one .network-track{animation:fare-lane-forward 38s linear infinite!important;animation-play-state:running!important}
+#server-results .network-row-two .network-track{animation:fare-lane-reverse 44s linear infinite!important;animation-play-state:running!important}
+#server-results.cards-paused .network-track{animation-play-state:paused!important}
+@keyframes fare-lane-forward{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-50%,0,0)}}
+@keyframes fare-lane-reverse{0%{transform:translate3d(-50%,0,0)}100%{transform:translate3d(0,0,0)}}
