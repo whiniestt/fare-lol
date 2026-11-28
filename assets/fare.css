@@ -760,3 +760,11 @@ html[data-theme="light"] .topbar.is-scrolled{
 
 /* The fixed navigation already floats over the page; don't push the whole layout down. */
 body{padding-top:0!important}
+
+
+/* Canonical server marquee override: animate the duplicated card track. */
+#server-results .network-marquee{display:block!important;position:relative!important;overflow:hidden!important;touch-action:pan-y!important}
+#server-results .network-track{display:flex!important;flex-wrap:nowrap!important;width:max-content!important;max-width:none!important;animation:fare-server-marquee 40s linear infinite!important;animation-play-state:running!important;will-change:transform!important}
+#server-results .network-marquee:hover .network-track{animation-play-state:running!important}
+#server-results .network-server-card{flex:0 0 clamp(300px,48vw,520px)!important}
+@keyframes fare-server-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
