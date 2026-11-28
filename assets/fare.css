@@ -857,3 +857,29 @@ body{padding-top:0!important}
 #server-results .network-server-meta .network-members::before{font-size:16px!important;margin-right:4px}
 #server-results .network-server-meta .network-protected::before{font-size:17px!important;margin-right:4px}
 }
+
+
+/* ZEON reference geometry: outlined capsule rail, true icons and edge vignette. */
+#server-results .network-marquee{height:clamp(190px,34vw,300px)!important;display:flex!important;align-items:center!important;position:relative!important;overflow:hidden!important;mask-image:linear-gradient(90deg,transparent 0%,#000 9%,#000 91%,transparent 100%)!important;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 9%,#000 91%,transparent 100%)!important}
+#server-results .network-marquee:before,#server-results .network-marquee:after{content:""!important;display:block!important;position:absolute!important;z-index:5!important;top:0!important;bottom:0!important;width:14%!important;pointer-events:none!important}
+#server-results .network-marquee:before{left:0!important;background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.72) 42%,transparent 100%)!important}
+#server-results .network-marquee:after{right:0!important;background:linear-gradient(270deg,#050505 0%,rgba(5,5,5,.72) 42%,transparent 100%)!important}
+#server-results .network-track{display:flex!important;align-items:center!important;gap:0!important;width:max-content!important}
+#server-results .network-server-card{box-sizing:border-box!important;width:clamp(560px,76vw,820px)!important;height:clamp(190px,25vw,260px)!important;min-height:0!important;flex:0 0 clamp(560px,76vw,820px)!important;display:flex!important;align-items:center!important;gap:clamp(28px,5vw,72px)!important;padding:0 clamp(30px,5vw,76px)!important;border:1px solid rgba(150,150,160,.19)!important;border-radius:999px!important;background:rgba(5,5,6,.14)!important;box-shadow:inset 0 1px rgba(255,255,255,.018)!important;overflow:hidden!important}
+#server-results .network-server-avatar{width:clamp(112px,18vw,190px)!important;height:clamp(112px,18vw,190px)!important;flex:0 0 clamp(112px,18vw,190px)!important;border-radius:50%!important;border:1px solid rgba(160,160,170,.18)!important;margin:0!important;box-shadow:0 0 0 1px rgba(255,255,255,.025)!important}
+#server-results .network-server-copy{min-width:0!important;flex:1!important;padding:0!important}
+#server-results .network-server-copy h3{font-size:clamp(22px,3vw,36px)!important;line-height:1.15!important;font-weight:550!important;letter-spacing:-.025em!important;margin:0 0 clamp(20px,3vw,38px)!important;white-space:nowrap!important}
+#server-results .network-server-meta{display:flex!important;align-items:center!important;gap:clamp(18px,3vw,38px)!important;flex-wrap:nowrap!important;white-space:nowrap!important;color:#77777e!important;font:500 clamp(13px,1.8vw,22px)/1.2 var(--mono)!important;letter-spacing:.045em!important}
+#server-results .network-server-meta span{display:inline-flex!important;align-items:center!important;gap:12px!important}
+#server-results .network-server-meta svg{display:block!important;width:clamp(24px,3vw,40px)!important;height:clamp(24px,3vw,40px)!important;fill:none!important;stroke:#85858d!important;stroke-width:1.65!important;stroke-linecap:round!important;stroke-linejoin:round!important;flex:0 0 auto!important}
+#server-results .network-card-link{display:none!important}
+@media(max-width:650px){
+#server-results .network-marquee{height:188px!important;margin-left:-22px!important;margin-right:-22px!important;width:calc(100% + 44px)!important}
+#server-results .network-marquee:before,#server-results .network-marquee:after{width:12%!important}
+#server-results .network-server-card{width:calc(100vw - 78px)!important;flex-basis:calc(100vw - 78px)!important;height:142px!important;padding:0 18px!important;gap:16px!important;border-radius:90px!important}
+#server-results .network-server-avatar{width:82px!important;height:82px!important;flex-basis:82px!important}
+#server-results .network-server-copy h3{font-size:18px!important;margin-bottom:15px!important}
+#server-results .network-server-meta{gap:13px!important;font-size:10px!important;letter-spacing:.025em!important}
+#server-results .network-server-meta span{gap:5px!important}
+#server-results .network-server-meta svg{width:17px!important;height:17px!important;stroke-width:1.8!important}
+}
