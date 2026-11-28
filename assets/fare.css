@@ -813,3 +813,25 @@ body{padding-top:0!important}
 #server-results .network-server-meta .network-protected::before{content:"♢";font:normal 26px/1 sans-serif;color:#88888f;margin-right:10px}
 #server-results .network-card-link{display:none!important}
 @media(max-width:650px){#server-results .network-marquee{height:166px!important;margin-left:-22px!important;margin-right:-22px!important;width:calc(100% + 44px)!important}#server-results .network-server-card{width:calc(100vw - 78px)!important;flex-basis:calc(100vw - 78px)!important;height:142px!important;min-height:142px!important;padding:14px 18px!important;gap:17px!important;border-radius:80px!important}#server-results .network-server-avatar{width:88px!important;height:88px!important;flex-basis:88px!important}#server-results .network-server-copy h3{font-size:clamp(17px,4.8vw,22px)!important;margin-bottom:12px!important}#server-results .network-server-meta{gap:12px!important;font-size:10px!important;flex-wrap:wrap!important}#server-results .network-server-meta .network-members::before{font-size:17px!important;margin-right:5px}#server-results .network-server-meta .network-protected::before{font-size:18px!important;margin-right:5px}}
+
+
+/* True oversized network capsules from the supplied reference. */
+#server-results .network-marquee{height:590px!important;display:flex!important;align-items:center!important;overflow:hidden!important;mask-image:linear-gradient(90deg,transparent 0%,#000 6%,#000 94%,transparent 100%)!important;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 6%,#000 94%,transparent 100%)!important}
+#server-results .network-track{align-items:center!important;gap:0!important}
+#server-results .network-server-card{box-sizing:border-box!important;width:calc(100vw - 168px)!important;max-width:1400px!important;height:565px!important;min-height:565px!important;flex:0 0 calc(100vw - 168px)!important;padding:0 0 0 0!important;gap:72px!important;border:1px solid rgba(130,130,140,.18)!important;border-radius:285px!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+#server-results .network-server-avatar{width:350px!important;height:350px!important;flex:0 0 350px!important;margin-left:0!important;border:1px solid rgba(150,150,160,.13)!important;box-shadow:none!important}
+#server-results .network-server-copy{flex:1!important;min-width:0!important;padding-right:44px!important}
+#server-results .network-server-copy h3{font-size:clamp(32px,4.2vw,66px)!important;font-weight:550!important;letter-spacing:-.04em!important;margin:0 0 58px!important}
+#server-results .network-server-meta{gap:38px!important;font:500 clamp(19px,2.1vw,32px)/1.25 var(--mono)!important;letter-spacing:.02em!important}
+#server-results .network-server-meta .network-members::before{font-size:42px!important;margin-right:18px!important}
+#server-results .network-server-meta .network-protected::before{font-size:44px!important;margin-right:18px!important}
+@media(max-width:650px){
+#server-results .network-marquee{height:270px!important;margin-left:-22px!important;margin-right:-22px!important;width:calc(100% + 44px)!important}
+#server-results .network-server-card{width:calc(100vw - 44px)!important;flex-basis:calc(100vw - 44px)!important;height:240px!important;min-height:240px!important;gap:18px!important;border-radius:125px!important;padding:0 14px 0 0!important}
+#server-results .network-server-avatar{width:132px!important;height:132px!important;flex-basis:132px!important;margin-left:0!important}
+#server-results .network-server-copy{padding-right:10px!important}
+#server-results .network-server-copy h3{font-size:clamp(17px,5vw,23px)!important;margin-bottom:23px!important}
+#server-results .network-server-meta{gap:13px!important;font-size:10px!important;flex-wrap:wrap!important}
+#server-results .network-server-meta .network-members::before{font-size:19px!important;margin-right:5px!important}
+#server-results .network-server-meta .network-protected::before{font-size:20px!important;margin-right:5px!important}
+}
