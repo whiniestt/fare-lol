@@ -883,3 +883,18 @@ body{padding-top:0!important}
 #server-results .network-server-meta span{gap:5px!important}
 #server-results .network-server-meta svg{width:17px!important;height:17px!important;stroke-width:1.8!important}
 }
+
+
+/* Fix metadata: remove legacy glyphs so only the reference SVG icons remain. */
+#server-results .network-server-meta .network-members::before,
+#server-results .network-server-meta .network-protected::before{content:none!important;display:none!important}
+#server-results .network-server-meta{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:nowrap!important;white-space:nowrap!important;gap:clamp(22px,3vw,42px)!important;width:max-content!important;max-width:100%!important}
+#server-results .network-server-meta .network-members,
+#server-results .network-server-meta .network-protected{display:inline-flex!important;flex:0 0 auto!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;white-space:nowrap!important;gap:12px!important;line-height:1!important}
+#server-results .network-server-meta .network-members svg{width:clamp(30px,3.5vw,48px)!important;height:clamp(30px,3.5vw,48px)!important;flex:0 0 auto!important;display:block!important}
+#server-results .network-server-meta .network-protected svg{width:clamp(30px,3.5vw,48px)!important;height:clamp(30px,3.5vw,48px)!important;flex:0 0 auto!important;display:block!important}
+@media(max-width:650px){
+#server-results .network-server-meta{gap:12px!important;width:auto!important}
+#server-results .network-server-meta .network-members,#server-results .network-server-meta .network-protected{gap:5px!important}
+#server-results .network-server-meta .network-members svg,#server-results .network-server-meta .network-protected svg{width:18px!important;height:18px!important}
+}
